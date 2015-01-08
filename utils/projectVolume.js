@@ -10,17 +10,7 @@ var VOLUME_CACHE = {
  * area：面积,mids:材料id数组
  * return {1001:16,1002:13}
  */
-var cal = function(area, mids) {
-	var pvloume = {};
-	if (area && mids && mids.length > 0) {
-		//遍历mids
-		mids.forEach(function(mid) {
-			if (VOLUME_CACHE[mid]) {
-				pvloume[mids] = Math.ceil(area * VOLUME_CACHE[mids]); //向上取整,有小数就整数部分加1 
-			}
-		});
-	}
-	return pvloume;
-}
-
-exports.calu = cal;
+exports.calculateByArea = function(area, mid) {
+	//向上取整,有小数就整数部分加1
+	return Math.ceil(area * (VOLUME_CACHE[mid] || 0.33));
+};

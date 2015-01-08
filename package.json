@@ -9,9 +9,12 @@
     "cookie-parser": "*",
     "express-session": "*",
     "method-override": "*",
-    "ejs":"*",
+    "ejs": "*",
+    "dateformat": "*",
+    "async": "*",
+    "q": "*",
+    "EventProxy": "*",
     "mongodb": "*",
-    "mongoose": "*",
-    "dateformat": "*"
+    "mongoose": "*"
   }
 }

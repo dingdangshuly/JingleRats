@@ -59,7 +59,7 @@
   <table width="1200" border="0" align="center" cellpadding="1" cellspacing="0" id="login_reg"> 
    <tbody>
     <tr> 
-     <td width="364" rowspan="3" align="center" valign="middle" bgcolor="#FFFFFF"><p><a href="#"><img src="image/dingdangshu.jpg" width="300" height="80" /></a></p></td> 
+     <td width="364" rowsspan="3" align="center" valign="middle" bgcolor="#FFFFFF"><p><a href="#"><img src="image/dingdangshu.jpg" width="300" height="80" /></a></p></td> 
      <td width="329" valign="middle"> &nbsp;</td> 
      <td width="1" valign="middle" bgcolor="#FFFFFF">&nbsp;</td> 
      <td width="108">&nbsp;</td> 
@@ -122,12 +122,16 @@
    </tbody>
   </table> 
   <br /> 
+  
+  <form action="/order" method="Post" name="orderForm">
   <table width="1200" border="0" align="center" cellpadding="1" cellspacing="0"> 
    <tbody>
     <tr> 
-     <td width="206" height="30" align="left" bgcolor="#FFFFFF"><p><i class="aa">*</i>建筑面积： <input name="room_long" type="text" class="inputinset" value="100" size="4" maxlength="5" /> ㎡</p></td> 
-     <td width="614" height="30" bgcolor="#FFFFFF"><i class="aa">*</i> 装修地址： <span class="search_panel clearfloat"> <input name="txtKeyWord2" type="text" class="search_text" id="txtKeyWord2" onfocus="kwonfocus(this);" onblur="kwonblur(this);" value="请输入您的送货地址" size="40" maxlength="50" /> <i class="aa">*</i> 手机号码： <input name="room_long2" type="text" class="inputinset" size="12" maxlength="11" /> </span></td> 
-     <td width="89" bgcolor="#FFFFFF"><span class="ee"> <input class="btnA" onclick="wall_brick(this.form)" type="button" value="提交" /> </span></td> 
+     <td width="206" height="30" align="left" bgcolor="#FFFFFF"><p><i class="aa">*</i>建筑面积： <input name="builtpArea" type="text" class="inputinset" value="100" size="4" maxlength="5" /> ㎡</p></td> 
+     <td width="614" height="30" bgcolor="#FFFFFF"><i class="aa">*</i> 装修地址： <span class="search_panel clearfloat"> <input name="address" type="text" class="search_text" id="txtKeyWord2" onfocus="kwonfocus(this);" onblur="kwonblur(this);" value="请输入您的送货地址" size="40" maxlength="50" /> <i class="aa">*</i> 手机号码： <input name="phone" type="text" class="inputinset" size="12" maxlength="11" /> </span></td> 
+     <!--
+     <td width="89" bgcolor="#FFFFFF"><span class="ee"> <input class="btnA" onclick="wall_brick(this.form)" type="button" value="提交" /> </span></td>
+     --> 
      <td width="283" align="left" bgcolor="#FFFFFF"><span class="ee">注：此栏为必填项，请确认无误后提交</span>&nbsp;。</td> 
     </tr> 
    </tbody>
@@ -160,118 +164,19 @@
            <td width="150" align="center"><strong>规格</strong></td> 
            <td width="150" align="center">合价（元）</td> 
           </tr> 
-          <tr> 
-           <td width="150" height="40" align="center">细木工板</td> 
-           <td width="150" align="center"><input name="textfield16" type="text" id="textfield20" value="6" size="13" maxlength="3" />张</td> 
-           <td width="150" align="center">125</td> 
-           <td width="150" height="40" align="center"> <select> <option value="qnz">莫干山</option> </select> </td> 
-           <td width="150">2420*1220*18mm</td> 
-           <td width="150" align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td height="40" align="center">3mm澳松</td> 
-           <td align="center"><input name="textfield16" type="text" id="textfield20" value="4" size="13" maxlength="3" /> 张</td> 
-           <td align="center">45</td> 
-           <td height="40" align="center"><select name="select"> <option value="qnz">莫干山</option> </select></td> 
-           <td>2420*1220*3mm</td> 
-           <td align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td height="40" align="center">9mm澳松</td> 
-           <td align="center"><input name="textfield16" type="text" id="textfield20" value="2" size="13" maxlength="3" /> 张</td> 
-           <td align="center">85</td> 
-           <td height="40" align="center"><select name="select"> <option value="qnz">莫干山</option> </select></td> 
-           <td>2420*1220*9mm</td> 
-           <td align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td height="40" align="center">18mm澳松</td> 
-           <td align="center"><input name="textfield2" type="text" id="textfield" value="2" size="13" maxlength="3" /> 张</td> 
-           <td align="center">125</td> 
-           <td height="40" align="center"><select name="select2"> <option value="qnz">莫干山</option> </select></td> 
-           <td>2420*1220*18mm</td> 
-           <td align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td width="150" height="40" align="center">马六甲</td> 
-           <td width="150" align="center"><input name="textfield16" type="text" id="textfield21" value="16" size="13" /> 张</td> 
-           <td width="150" align="center">185</td> 
-           <td width="150" height="40" align="center"> <select> <option value="tbb">莫干山</option> </select> </td> 
-           <td width="150">2420*1220*18mm</td> 
-           <td width="150" align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td width="150" height="40" align="center">马六甲背板</td> 
-           <td width="150" align="center"><input name="textfield16" type="text" id="textfield24" value="6" size="13" /> 张</td> 
-           <td width="150" align="center">35</td> 
-           <td width="150" height="40" align="center"> <select> <option value="mgs">莫干山</option> </select> </td> 
-           <td width="150">2420*1220*5mm</td> 
-           <td width="150" align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td width="150" height="40" align="center">石膏板</td> 
-           <td width="150" align="center"><input name="textfield16" type="text" id="textfield34" value="15" size="13" />张</td> 
-           <td width="150" align="center">17.5</td> 
-           <td width="150" height="40" align="center"> <select> <option value="knf">泰山</option> </select> </td> 
-           <td width="150"><p>2420*1220*9mm</p></td> 
-           <td width="150" align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td width="150" height="40" align="center">木龙骨</td> 
-           <td width="150" align="center"><input name="textfield16" type="text" id="textfield35" value="13" size="13" /> 捆</td> 
-           <td width="150" align="center">17.5</td> 
-           <td width="150" height="40" align="center"> <select> <option value="lf">绿峰</option> </select> </td> 
-           <td width="150">3000*40*20</td> 
-           <td width="150" align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td width="150" height="40" align="center">腻子粉</td> 
-           <td width="150" align="center"><input name="textfield16" type="text" id="textfield36" value="33" size="13" /> 袋</td> 
-           <td width="150" align="center">8</td> 
-           <td width="150" height="40" align="center"> <select> <option value="mc">美巢</option> </select> </td> 
-           <td width="150">10kg</td> 
-           <td width="150" align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td width="150" height="40" align="center">乳胶漆</td> 
-           <td width="150" align="center"><input name="textfield16" type="text" id="textfield37" value="2" size="13" /> 桶</td> 
-           <td width="150" align="center">380</td> 
-           <td width="150" height="40" align="center"> <select> <option value="lb">立邦</option> </select> </td> 
-           <td width="150">20kg</td> 
-           <td width="150" align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td width="150" height="40" align="center">白乳胶</td> 
-           <td width="150" align="center"><input name="textfield16" type="text" id="textfield39" value="1" size="13" /> 桶</td> 
-           <td width="150" align="center">90</td> 
-           <td width="150" height="40" align="center"> <select> <option value="lb">立邦</option> </select> </td> 
-           <td width="150">20kg</td> 
-           <td width="150" align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td width="150" height="40" align="center">墙固</td> 
-           <td width="150" align="center"><input name="textfield16" type="text" id="textfield40" value="2" size="13" />桶</td> 
-           <td width="150" align="center">90</td> 
-           <td width="150" height="40" align="center"> <select> <option value="sb">盛邦</option> </select> </td> 
-           <td width="150">20kg</td> 
-           <td width="150" align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td width="150" height="40" align="center">石膏粉</td> 
-           <td width="150" align="center"><input name="textfield" type="text" id="textfield3" value="2" size="13" /> 袋</td> 
-           <td width="150" align="center">14</td> 
-           <td width="150" height="40" align="center"><select name="select"> <option value="lb">立邦</option> </select></td> 
-           <td width="150">10kg</td> 
-           <td width="150" align="center">&nbsp;</td> 
-          </tr> 
-          <tr> 
-           <td width="150" height="40" align="center"><a href="#">添加大类</a></td> 
-           <td width="150" align="center">&nbsp;</td> 
-           <td>&nbsp;</td> 
-           <td width="150" height="40">&nbsp;</td> 
-           <td width="150">&nbsp;</td> 
-           <td>&nbsp;</td> 
-          </tr> 
+          <%
+             var i = 0; 
+             materials.forEach(function(material){ %> 
+             <tr> 
+              <td><input type="hidden" name="rows[<%=i%>][mid]" value=<%=material.mid%>></td>
+                <td width="150" height="40" align="center"><input type="text" name="rows[<%=i%>][name]" value=<%=material.name%> /></td> 
+                <td width="150" align="center"> <input name="rows[<%=i%>][quantity]" type="text" id="textfield20" size="13" maxlength="3" value=<%=material.quantity%> /> 张 </td> 
+                <td width="150" align="center"><input type="text" name="rows[<%=i%>][price]" value=<%=material.unitprice%> /></td> 
+                <td width="150" height="40" align="center"> <select name="rows[<%=i%>][brandid]" form="order"> <option value="qnz">莫干山</option><option value="lgm">老干妈</option><option value="jl">金立</option> </select> </td> 
+                <td width="150"><input type="text" name="rows[<%=i%>][standard]" value=<%=material.standard%> /></td> 
+                <td width="150" align="center">&nbsp;</td>
+             </tr> 
+           <% i++ }); %>   
          </tbody>
         </table> 
        </div> 
@@ -305,8 +210,12 @@
   </table> 
   <span class="ee"> <br /> 
    <center> 
-    <input class="btnA" onclick="wall_brick(this.form)" type="button" value="保存" /> 确定无误后请点击保存 
+   <!--
+    <input class="btnA" onclick="wall_brick(this.form)" type="button" value="保存" /> 确定无误后请点击保存
+    --> 
+    <input class="btnA" type="submit" value="保存" /> 确定无误后请点击保存
    </center><br /> <br /> </span> 
+  </form>
   <table width="1200" border="0" align="center" cellpadding="0" cellspacing="0"> 
    <tbody>
     <tr> 
@@ -320,7 +229,7 @@
      <td align="left" bgcolor="#CC6600" class="qq"><span class="ffg">我要注册</span></td> 
      <td bgcolor="#CC6600"><span class="ffg">一站式配齐装修材料</span></td> 
      <td height="40" bgcolor="#CC6600"><span class="ffg">墙砖计算器</span></td> 
-     <td height="120" rowspan="3" align="left" bgcolor="#CC6600"><img src="image/weixin_110_110.jpg" width="110" height="110" /></td> 
+     <td height="120" rowsspan="3" align="left" bgcolor="#CC6600"><img src="image/weixin_110_110.jpg" width="110" height="110" /></td> 
      <td bgcolor="#CC6600"><span class="qq">7858888</span></td> 
     </tr> 
     <tr> 

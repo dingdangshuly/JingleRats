@@ -3,7 +3,6 @@ var cookieUtil = require('../utils/cookieUtil');
 
 //用户注册
 exports.signup = function(req, res) {
-
 	var userid = req.body.userid.trim();
 	var password = req.body.password.trim();
 
@@ -32,6 +31,7 @@ exports.signup = function(req, res) {
 			});
 			return;
 		}
+		//保存用户
 		User.saveUser(userid, password, function(err) {
 			if (err) {
 				return next(err);
@@ -45,13 +45,11 @@ exports.signup = function(req, res) {
 	});
 };
 
-
 //登陆
 exports.login = function(req, res) {
-
-	if (req.body.remember) {
-	console.info('==========>'+req.body.remember);
-		cookieUtil.readCookieAndLogin(req,function(user){
+	console.info('===>', req.session.user);
+	if (req.body.remember || req.session.user) {
+		cookieUtil.readCookieAndLogin(req, function(user) {
 			res.json({
 				msg: user.userid,
 				status: 'success'
@@ -67,6 +65,7 @@ exports.login = function(req, res) {
 			});
 			return;
 		}
+		//查找用户
 		User.findUser({
 			'userid': userid,
 			'password': password
@@ -82,6 +81,7 @@ exports.login = function(req, res) {
 				});
 				return;
 			}
+			//用户信息写cookie
 			cookieUtil.saveCookie(user, req, res);
 			res.json({
 				msg: userid,
@@ -92,8 +92,14 @@ exports.login = function(req, res) {
 
 }
 
+exports.readCookieAndLogin = function(req, res) {
+
+}
+
 //登出
 exports.loginOut = function(req, res) {
-	// 	res.clearCookie('remember');
-	res.render('index', {});
+	cookieUtil.clearCookie(req, res);
+	res.render('index', {
+		msg: '用户已退出'
+	});
 }

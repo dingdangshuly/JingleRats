@@ -1,9 +1,21 @@
 var models = require('../models');
 var Order = models.Order;
 
+//生成订单
+var saveOrder = exports.saveOrder = function(oid, builtpArea, address, phone, materials, totalprice, callback) {
+	var order = new Order();
+	order.oid = oid;
+	order.builtpArea = builtpArea;
+	order.phone = phone;
+	order.materials = materials;
+	order.totalprice = totalprice;
+	order.address = address;
+	order.save(callback);
+};
+
 //订单查询
 exports.findOrder = function(query, callback) {
-	Order.find(query, callback);
+	Order.findOne(query, callback);
 };
 
 //订单修改
@@ -16,20 +28,8 @@ exports.removeOrder = function(query, callback) {
 	Order.remove(query, callback);
 };
 
-//生成订单
-var saveOrder = exports.saveOrder = function(oid, builtpArea, address, mobile, materials, totalprice, callback) {
-	var order = new Order();
-	order.oid = oid;
-	order.builtpArea = builtpArea;
-	order.mobile = mobile;
-	order.materials = materials;
-	order.totalprice = totalprice;
-	order.address = address;
-	order.save(callback);
-};
+exports.getOrderID = function() {
 
-exports.getOrderID = function(){
-	
 }
 
 //Test

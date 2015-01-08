@@ -16,13 +16,13 @@ var OrderSchema = new Schema({
 		type: String
 	},
 	//联系人手机号
-	mobile: {
+	phone: {
 		type: String
 	},
 	//材料id，材料数目
 	materials: [{
 		mid: String,
-		mnum: Number
+		quantity: Number
 	}],
 	//合计
 	totalprice: {

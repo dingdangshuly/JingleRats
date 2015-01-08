@@ -1,0 +1,32 @@
+<html>
+ <head></head> 
+ <body> 
+  <form action="/orderForm" method="Post" id="order"> 
+   <input type="submit" name="button" id="button" value="登录" /> 
+   <table width="912" height="580" border="0" align="center" cellpadding="1" cellspacing="0"> 
+    <tbody> 
+     <tr> 
+      <td width="150" height="20" align="center"> <p> <strong>名称</strong> </p> </td> 
+      <td width="150" align="center"> <strong>工程量</strong> </td> 
+      <td width="150" align="center"> <strong>单价（元）</strong> </td> 
+      <td width="150" align="center"> <strong>品牌</strong> </td> 
+      <td width="150" align="center"> <strong>规格</strong> </td> 
+      <td width="150" align="center">合价（元）</td> 
+     </tr>
+     <%
+       var i = 0; 
+       materials.forEach(function(material){ %> 
+       <tr> 
+        <td width="150" height="40" align="center"><input type="text" name="line[<%=i%>]["name"]" value=<%=material.name%> /></td> 
+        <td width="150" align="center"> <input name="line[<%=i%>]['quantity']" type="text" id="textfield20" size="13" maxlength="3" value=<%=material.quantity%> /> 张 </td> 
+        <td width="150" align="center"><input type="text" name="line[<%=i%>]['price']" value=<%=material.unitprice%> /></td> 
+        <td width="150" height="40" align="center"> <select name="line[<%=i%>]['brandid']" form="order"> <option value="qnz">莫干山</option><option value="lgm">老干妈</option><option value="jl">金立</option> </select> </td> 
+        <td width="150"><input type="text" name="line[<%=i%>]["name"]" value=<%=material.standard%> /></td> 
+        <td width="150" align="center">&nbsp;</td>
+       </tr> 
+     <% i++ }); %>   
+    </tbody> 
+   </table> 
+  </form>  
+ </body>
+</html>

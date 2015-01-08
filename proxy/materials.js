@@ -4,7 +4,7 @@ var Materials = models.Materials;
 
 //材料查询
 exports.findMaterials = function(query, callback) {
-	Materials.find(query, callback);
+	Materials.findOne(query, callback);
 };
 
 //材料修改

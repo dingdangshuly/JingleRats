@@ -30,30 +30,18 @@ app.use(bodyParser.urlencoded({
 // 	cookieUtils.readCookieAndLogin(req, res, next);
 // });
 
+var sign = require('./controller/sign_ctrl');
+var materials = require('./controller/materials_ctrl');
+var order = require('./controller/order_ctrl');
 
-app.get('/index', function(req, res) {
-	res.render('index', {});
-	// res.render('form', {msg:{userid:'tom'}});
-});
-
-// app.get('/index', function(req, res) {
-// 	res.render('form', {msg:{userid:'tom'}});
-
-// 	res.end('ok');
-// 	// res.render('form', {msg:{userid:'tom'}});
-// });
-
-
-// app.post('/orderForm', function(req, res) {
-// 	console.info(req.body);
-// 	// res.render('form', {msg:{userid:'tom'}});
-
-// 	res.end('ok');
-// });
+app.get('/*',);
+app.get('/index', materials.getDefaultMaterials);
+app.post('/order', order.generateOrder);
+app.get('/orderPage', order.queryOrderById);
 
 //注册
-var sign = require('./controller/sign_ctrl');
 app.post('/signup', sign.signup);
 app.post('/login', sign.login);
+app.post('/logout', );
 
 app.listen(3000);

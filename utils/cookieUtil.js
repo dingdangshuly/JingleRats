@@ -14,7 +14,7 @@ var webkey = '123456';
 //保存cookie 格式：base64（ 用户id+':'+过期时间+':'+MD5（用户id+':'+过期时间+':'+用户密码+key））
 exports.saveCookie = function(user, req, res) {
 	//cookie有效期
-	var validTime = cookieMaxAge * 5000;
+	var validTime = cookieMaxAge;
 	//MD5加密cookie
 	var cookieValueWithMd5 = crypto.createHash('md5').update(user.userid + ':' + user.password + ':' + validTime + ':' + webkey).digest('hex');
 	//将要被保存的完整cookie值
@@ -61,7 +61,6 @@ exports.readCookieAndLogin = function(req,cb) {
 
 
 //用户注销时，清除cookie
-exports.clearCookie = function(req, res, next) {
+exports.clearCookie = function(req, res) {
 	res.clearCookie(cookieDomainName);
-	next();
 }
