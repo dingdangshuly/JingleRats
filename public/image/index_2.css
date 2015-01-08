@@ -1,0 +1,384 @@
+BODY {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, "宋体", sans-serif
+}
+.mt15 {
+	MARGIN-TOP: 15px
+}
+.mt5 {
+	MARGIN-TOP: 5px
+}
+.ov_h {
+	OVERFLOW: hidden; WIDTH: 970px
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+.limit_nav_new {
+	DISPLAY: none
+}
+.dashed_bg {
+	HEIGHT: 7px; BACKGROUND: url(http://style.77zxw.com/images/index_v3_fg_bg.jpg) repeat-x; WIDTH: 100%
+}
+.mod_title {
+	BORDER-TOP: #c73d22 3px solid; HEIGHT: 58px; BORDER-BOTTOM: #d7d7d7 1px solid; POSITION: relative; MARGIN-TOP: 27px; LINE-HEIGHT: 58px
+}
+.mod_title STRONG {
+	FONT-SIZE: 20px; FONT-FAMILY: 'Microsoft YaHei'; COLOR: #c73d22
+}
+.mod_title .update_num {
+	COLOR: #999; PADDING-LEFT: 15px
+}
+.mod_title .update_num I {
+	FONT-WEIGHT: bold; COLOR: #ff6600; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+}
+.mod_title .update_num:hover {
+	COLOR: #999; TEXT-DECORATION: none
+}
+.mod_share {
+	FLOAT: right; MARGIN-TOP: 20px
+}
+.mod_share A {
+	MARGIN: 7px 0px 6px 6px
+}
+.mod_share A.bds_more {
+	MARGIN-RIGHT: 0px
+}
+.nat_nav {
+	HEIGHT: 38px; BACKGROUND: #505050; WIDTH: 100%
+}
+.nat_nav UL LI {
+	OVERFLOW: hidden; FONT-SIZE: 14px; HEIGHT: 38px; FONT-FAMILY: 宋体; FLOAT: left; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 20px; DISPLAY: inline-block; LINE-HEIGHT: 38px; PADDING-RIGHT: 20px; _line-height: 42px
+}
+.nat_nav UL LI A {
+	COLOR: #fff
+}
+.nat_nav UL LI A:hover {
+	COLOR: #fff
+}
+.nat_nav UL .enter_site {
+	FONT-SIZE: 16px; HEIGHT: 43px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: -3px 30px 0px 0px; LINE-HEIGHT: 43px; PADDING-RIGHT: 0px; _line-height: 48px
+}
+.nat_nav UL .enter_site A {
+	BACKGROUND: #ff6600; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 36px; DISPLAY: block; PADDING-RIGHT: 36px
+}
+.nat_nav UL .enter_site A:active {
+	BACKGROUND: #00c637
+}
+.nat_nav UL .enter_site A:hover {
+	TEXT-DECORATION: none
+}
+.choose_city {
+	FONT-SIZE: 14px; BORDER-TOP: #c73d22 5px solid; HEIGHT: auto; BORDER-RIGHT: #c73d22 5px solid; BACKGROUND: #fff; BORDER-BOTTOM: #c73d22 5px solid; POSITION: relative; MARGIN: 14px auto 0px; BORDER-LEFT: #c73d22 5px solid; WIDTH: 960px
+}
+.choose_city .city_bg {
+	HEIGHT: 115px; BACKGROUND: url(http://style.77zxw.com/images/index_new_icon.png?6) no-repeat 0px 0px; RIGHT: 10px; POSITION: absolute; FILTER: alpha(opacity=40); DISPLAY: block; TOP: 5px; WIDTH: 253px; opacity: .4
+}
+.choose_city .cs_zs {
+	OVERFLOW: hidden; MARGIN-BOTTOM: 20px; CLEAR: both
+}
+.choose_city .cs_zs .xzcs_dt A {
+	FONT-SIZE: 12px; COLOR: #5f675e; MARGIN: 0px 18px 12px 0px
+}
+.choose_city .cs_zs .xzcs_dt A.se_cur {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold; COLOR: #ff7e00
+}
+.choose_city .rmcs {
+	OVERFLOW: hidden; HEIGHT: 50px; CLEAR: both; MARGIN-TOP: 17px; LINE-HEIGHT: 50px
+}
+.choose_city .title_type1 {
+	FLOAT: left; FONT-WEIGHT: bold; COLOR: #333; PADDING-LEFT: 28px; WIDTH: 118px
+}
+.choose_city .title_type2 {
+	FLOAT: left; FONT-WEIGHT: bold; COLOR: #333; PADDING-LEFT: 28px; WIDTH: 118px
+}
+.choose_city .title_type2 {
+	COLOR: #595959
+}
+.choose_city .xzcs_dt {
+	FLOAT: left; WIDTH: 814px
+}
+.choose_city .rmcs SPAN {
+	FLOAT: left; COLOR: #f36f20
+}
+.choose_city .rmcs SPAN A {
+	FLOAT: left; COLOR: #f36f20
+}
+.choose_city .cs_zs .xzcs_dt SPAN A {
+	COLOR: #2baa1b
+}
+.choose_city .xzcs_dt A {
+	DISPLAY: inline-block; MARGIN-RIGHT: 28px
+}
+.choose_city .rm_gkt {
+	FONT-SIZE: 12px; FLOAT: left; COLOR: #333
+}
+.choose_city .xzcs_dt .rm_gkt I {
+	COLOR: #f36f20
+}
+.choose_city .rm_cz {
+	MARGIN-TOP: 3px; LINE-HEIGHT: 30px; _margin-top: 10px
+}
+.choose_city .rm_cz SELECT {
+	BORDER-TOP: #d7d7d7 1px solid; HEIGHT: 21px; BORDER-RIGHT: #d7d7d7 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #d7d7d7 1px solid; BORDER-LEFT: #d7d7d7 1px solid
+}
+.choose_city .rm_cz #shen {
+	WIDTH: 133px
+}
+.choose_city .rm_cz #city {
+	WIDTH: 133px
+}
+.choose_city .rm_cz .smt {
+	BORDER-TOP-STYLE: none; OVERFLOW: hidden; CURSOR: pointer; BORDER-LEFT-STYLE: none; HEIGHT: 21px; VERTICAL-ALIGN: middle; BACKGROUND: #ff7b00; BORDER-BOTTOM-STYLE: none; FONT-WEIGHT: bold; COLOR: #fff; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 20px; LINE-HEIGHT: 21px; PADDING-RIGHT: 20px; _line-height: 22px; _height: 22px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; transition: .3s background linear
+}
+.choose_city .rm_cz .smt:hover {
+	BACKGROUND: #ff9300
+}
+.letter_search {
+	BORDER-TOP: #d7d7d7 1px solid; HEIGHT: 46px; BACKGROUND: #f4f4f4; BORDER-BOTTOM: #d7d7d7 1px solid; MARGIN: 20px 0px; LINE-HEIGHT: 46px
+}
+.letter_search STRONG.title_type2 {
+	WIDTH: auto
+}
+.letter_search .letter_list {
+	OVERFLOW: hidden; FONT-SIZE: 0px; FLOAT: right; MARGIN: 11px 10px 0px 0px
+}
+.letter_search .letter_list A {
+	OVERFLOW: hidden; FONT-SIZE: 14px; HEIGHT: 25px; COLOR: #666; TEXT-ALIGN: center; DISPLAY: inline-block; LINE-HEIGHT: 25px; WIDTH: 25px
+}
+* + HTML .letter_search .letter_list {
+	MARGIN-TOP: 0px
+}
+.letter_search .letter_list A.se_cur {
+	BACKGROUND: #ff6600; COLOR: #fff
+}
+.decoration .mod_plate_list {
+	COLOR: #666
+}
+.xgt_li {
+	OVERFLOW: hidden; WIDTH: 982px
+}
+.xgt_li UL.xgt_li_lf {
+	WIDTH: 205px
+}
+.xgt_li UL.xgt_li_ce {
+	HEIGHT: 330px; WIDTH: 356px; MARGIN-RIGHT: 10px; _margin-right: 0
+}
+.xgt_li UL.xgt_li_ce LI {
+	HEIGHT: 330px
+}
+.xgt_li UL.xgt_li_rt {
+	WIDTH: 410px
+}
+.xgt_li UL {
+	POSITION: relative; FLOAT: left
+}
+.xgt_li UL LI {
+	OVERFLOW: hidden; MARGIN-BOTTOM: 10px; HEIGHT: 160px; BACKGROUND: #f4f4f4; POSITION: relative; FLOAT: left; DISPLAY: inline; MARGIN-RIGHT: 10px
+}
+.xgt_li SPAN {
+	FONT-SIZE: 12px; HEIGHT: 27px; RIGHT: 0px; POSITION: absolute; FONT-WEIGHT: bolder; COLOR: #fff; TEXT-ALIGN: center; FILTER: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7333333,endcolorstr=#7333333) Alpha(Opacity=80); DISPLAY: block; LINE-HEIGHT: 27px; WIDTH: 100%; BOTTOM: 0px
+}
+.zb_cj LI SPAN {
+	FONT-SIZE: 12px; HEIGHT: 27px; RIGHT: 0px; POSITION: absolute; FONT-WEIGHT: bolder; COLOR: #fff; TEXT-ALIGN: center; FILTER: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7333333,endcolorstr=#7333333) Alpha(Opacity=80); DISPLAY: block; LINE-HEIGHT: 27px; WIDTH: 100%; BOTTOM: 0px
+}
+.apply_switch {
+	BORDER-TOP: #d7d7d7 1px solid; HEIGHT: 118px; BORDER-RIGHT: #d7d7d7 1px solid; BACKGROUND: #fff; BORDER-BOTTOM: #d7d7d7 1px solid; BORDER-LEFT: #d7d7d7 1px solid; MARGIN-TOP: 20px
+}
+.apply_switch .switch_tit {
+	OVERFLOW: hidden; HEIGHT: 48px; WIDTH: 975px
+}
+.apply_switch .switch_tit LI {
+	CURSOR: pointer; FONT-SIZE: 14px; HEIGHT: 47px; BORDER-RIGHT: #d7d7d7 1px solid; BACKGROUND: #f2f2f2; BORDER-BOTTOM: #d7d7d7 1px solid; FLOAT: left; COLOR: #333; TEXT-ALIGN: center; DISPLAY: inline; LINE-HEIGHT: 40px; WIDTH: 194px
+}
+.apply_switch .switch_tit LI I {
+	VERTICAL-ALIGN: -6px; BACKGROUND: url(http://style.77zxw.com/images/index_new_icon.png) no-repeat; DISPLAY: inline-block; MARGIN-RIGHT: 10px
+}
+.apply_switch .switch_tit LI .s_ico1 {
+	HEIGHT: 27px; BACKGROUND-POSITION: 0px -126px; WIDTH: 26px
+}
+.apply_switch .switch_tit LI .s_ico2 {
+	HEIGHT: 27px; BACKGROUND-POSITION: -31px -126px; WIDTH: 26px
+}
+.apply_switch .switch_tit LI .s_ico3 {
+	HEIGHT: 28px; BACKGROUND-POSITION: -62px -126px; WIDTH: 27px
+}
+.apply_switch .switch_tit LI .s_ico4 {
+	HEIGHT: 27px; BACKGROUND-POSITION: -94px -127px; WIDTH: 25px
+}
+.apply_switch .switch_tit LI .s_ico5 {
+	HEIGHT: 27px; BACKGROUND-POSITION: -124px -127px; WIDTH: 25px
+}
+.apply_switch .switch_tit LI EM {
+	OVERFLOW: hidden; HEIGHT: 5px; BACKGROUND: #f2f2f2; DISPLAY: block; WIDTH: 100%; transition: .3s linear background; _margin-bottom: 7px
+}
+.apply_switch .switch_tit .switch_cur {
+	HEIGHT: 48px; BACKGROUND: #fff; BORDER-BOTTOM: #fff 1px solid; FONT-WEIGHT: bold; COLOR: #c73d22; LINE-HEIGHT: 45px
+}
+.apply_switch .switch_tit .switch_cur EM {
+	BACKGROUND: #c73d22
+}
+.apply_switch .switch_center {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 15px; PADDING-LEFT: 24px; DISPLAY: none; PADDING-RIGHT: 0px
+}
+.apply_switch .switch_center .some_txt {
+	FONT-FAMILY: 宋体; FLOAT: left; COLOR: #333; LINE-HEIGHT: 20px; PADDING-RIGHT: 13px; WIDTH: 255px
+}
+.apply_switch .switch_center .some_txt SPAN {
+	DISPLAY: block
+}
+.apply_switch .switch_center .check_text {
+	COLOR: #646464; TEXT-ALIGN: center; LINE-HEIGHT: 20px; WIDTH: 115px
+}
+.apply_switch .switch_center .err_text {
+	COLOR: #646464; TEXT-ALIGN: center; LINE-HEIGHT: 20px; WIDTH: 115px
+}
+.apply_switch .switch_center .check_text SPAN {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold; COLOR: #ff7800
+}
+.apply_switch .switch_center .err_text SPAN {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold; COLOR: #ff7800
+}
+.apply_switch .switch_center .err_text {
+	COLOR: #cf1818; LINE-HEIGHT: 36px
+}
+.apply_switch .switch_center .cor_text {
+	COLOR: #c73d22; LINE-HEIGHT: 36px
+}
+.apply_switch .switch_center .form_ele {
+	FLOAT: left; PADDING-RIGHT: 18px
+}
+.apply_switch .switch_center .input_type {
+	BORDER-TOP: #c73d22 1px solid; HEIGHT: 24px; BORDER-RIGHT: #c73d22 1px solid; BORDER-BOTTOM: #c73d22 1px solid; COLOR: #999; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 15px; BORDER-LEFT: #c73d22 1px solid; MARGIN-TOP: 4px; LINE-HEIGHT: 24px; PADDING-RIGHT: 15px; WIDTH: 165px
+}
+.apply_switch .switch_center .apply_btn {
+	BORDER-LEFT-WIDTH: 0px; OVERFLOW: hidden; CURSOR: pointer; FONT-SIZE: 14px; HEIGHT: 34px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND: #ff7b00; BORDER-BOTTOM-WIDTH: 0px; FONT-WEIGHT: bold; COLOR: #fff; TEXT-ALIGN: center; OUTLINE-STYLE: none; MARGIN-TOP: 4px; LINE-HEIGHT: 34px; BORDER-TOP-WIDTH: 0px; WIDTH: 97px; transition: .3s linear background
+}
+.apply_switch .switch_center .apply_btn:hover {
+	BACKGROUND: #ff9300
+}
+.apply_switch .custom_sele {
+	CURSOR: pointer; POSITION: relative; PADDING-TOP: 4px; Z-INDEX: 2
+}
+.apply_switch .custom_sele .def_text {
+	BORDER-TOP: #089629 1px solid; HEIGHT: 32px; BORDER-RIGHT: #089629 1px solid; BORDER-BOTTOM: #089629 1px solid; COLOR: #999; PADDING-LEFT: 10px; BORDER-LEFT: #089629 1px solid; LINE-HEIGHT: 32px; WIDTH: 165px
+}
+.apply_switch .custom_sele .sele_option {
+	BORDER-RIGHT: #089629 1px solid; BACKGROUND: #fff; BORDER-BOTTOM: #089629 1px solid; POSITION: absolute; BORDER-LEFT: #089629 1px solid; Z-INDEX: 2; DISPLAY: none; TOP: 34px; WIDTH: 175px
+}
+.apply_switch .custom_sele .sele_option LI {
+	HEIGHT: 24px; BACKGROUND: #fff; COLOR: #666; PADDING-LEFT: 11px; LINE-HEIGHT: 24px; transition: .2s background ease
+}
+.apply_switch .custom_sele .sele_option LI:hover {
+	BACKGROUND: #089629; COLOR: #fff
+}
+.apply_switch .custom_sele .gray_arrow {
+	OVERFLOW: hidden; FONT-SIZE: 0px; BORDER-TOP: #7b7b7b 5px solid; HEIGHT: 0px; BORDER-RIGHT: transparent 5px dashed; RIGHT: 10px; BORDER-BOTTOM: transparent 5px dashed; POSITION: absolute; BORDER-LEFT: transparent 5px dashed; TOP: 19px; WIDTH: 0px; _right: 25px
+}
+.apply_switch .open_sele .sele_option {
+	DISPLAY: block
+}
+.decoration_style {
+	OVERFLOW: hidden; HEIGHT: auto
+}
+.decoration_style .mod_plate_list {
+	FLOAT: right; COLOR: #666
+}
+.decoration_style .mod_plate_list .more_txt {
+	FONT-FAMILY: 宋体; PADDING-LEFT: 35px
+}
+.decoration_style .zb_cj {
+	MARGIN-TOP: 15px; WIDTH: 978px
+}
+.decoration_style .zb_cj LI {
+	OVERFLOW: hidden; MARGIN-BOTTOM: 10px; HEIGHT: 175px; POSITION: relative; FLOAT: left; WIDTH: 155px; MARGIN-RIGHT: 8px
+}
+.decoration_style .zb_cj LI IMG {
+	WIDTH: 155px
+}
+.new_list {
+	OVERFLOW: hidden; BORDER-TOP: #c73d22 3px solid; HEIGHT: auto; BACKGROUND: #f4f4f4; MARGIN-TOP: 25px
+}
+.new_list DL {
+	OVERFLOW: hidden; HEIGHT: auto; FLOAT: left; PADDING-BOTTOM: 10px; PADDING-TOP: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 10px; WIDTH: 308px
+}
+.new_list DL DT {
+	OVERFLOW: hidden; HEIGHT: 50px; MARGIN-TOP: 20px; LINE-HEIGHT: 38px
+}
+.new_list DL DT I {
+	BACKGROUND: url(http://style.77zxw.com/images/index_new_icon.png) no-repeat; FLOAT: left
+}
+.new_list DL DT A {
+	FONT-SIZE: 14px; FLOAT: left; FONT-WEIGHT: bold; COLOR: #545454; PADDING-LEFT: 10px
+}
+.new_list DL DT A:hover {
+	TEXT-DECORATION: none
+}
+.new_list DL DD A:hover {
+	TEXT-DECORATION: none
+}
+.new_list DL DD {
+	OVERFLOW: hidden; BACKGROUND: url(http://style.77zxw.com/images/index_new_icon.png) no-repeat 5px -261px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 10px; MARGIN-LEFT: 10px; LINE-HEIGHT: 32px; PADDING-RIGHT: 5px; transition: .3s background ease
+}
+.new_list DL DD A {
+	OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; FLOAT: left; COLOR: #545454; PADDING-LEFT: 5px; WIDTH: 202px
+}
+.new_list DL DD:hover {
+	BACKGROUND-COLOR: #e8ebef
+}
+.new_list DL DD SPAN {
+	FLOAT: right; COLOR: #545454
+}
+.new_list DL .new_zb {
+	HEIGHT: 36px; BACKGROUND-POSITION: 6px -162px; MARGIN-TOP: 2px; WIDTH: 48px
+}
+.new_list DL .new_bbs {
+	HEIGHT: 43px; BACKGROUND-POSITION: -50px -162px; WIDTH: 50px
+}
+.new_list DL .new_ask {
+	HEIGHT: 45px; BACKGROUND-POSITION: -104px -162px; WIDTH: 55px
+}
+.new_list DL.white_bg {
+	BACKGROUND: #fff
+}
+.friend_link_list {
+	OVERFLOW: hidden; HEIGHT: auto; PADDING-BOTTOM: 40px; MARGIN-TOP: 24px
+}
+.friend_link_list A {
+	OVERFLOW: hidden; HEIGHT: 24px; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; FLOAT: left; COLOR: #525252; PADDING-LEFT: 13px; LINE-HEIGHT: 24px; WIDTH: 108px
+}
+.backToTop {
+	OVERFLOW: hidden; CURSOR: pointer; HEIGHT: 58px; BACKGROUND: url(http://style.77zxw.com/images/return_top_type3.png) no-repeat center 50%; RIGHT: 30px; POSITION: fixed; FILTER: alpha(opacity=60); DISPLAY: none; WIDTH: 68px; BOTTOM: 20px; opacity: .6; border-radius: 5px; transition: .3s opacity linear; _position: absolute; _bottom: "auto"
+}
+.backToTop:hover {
+	FILTER: alpha(opacity=80); opacity: .8
+}
+.xgt_li UL LI .mask {
+	HEIGHT: 100%; BACKGROUND: #000; POSITION: absolute; LEFT: 0px; FILTER: alpha(opacity=0); DISPLAY: none; TOP: 0px; WIDTH: 100%; opacity: 0
+}
+.zb_cj LI .mask {
+	HEIGHT: 100%; BACKGROUND: #000; POSITION: absolute; LEFT: 0px; FILTER: alpha(opacity=0); DISPLAY: none; TOP: 0px; WIDTH: 100%; opacity: 0
+}
+.search {
+	POSITION: relative; FLOAT: right; MARGIN-TOP: 5px; WIDTH: 480px
+}
+.search_panel INPUT {
+	BORDER-TOP: medium none; HEIGHT: 29px; BORDER-BOTTOM: medium none; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5px; MARGIN: 0px; BORDER-LEFT: medium none; LINE-HEIGHT: 29px; PADDING-RIGHT: 0px
+}
+.search_panel INPUT.search_tab {
+	OVERFLOW: hidden; CURSOR: pointer; FONT-SIZE: 14px; BORDER-TOP: #c73d22 3px solid; HEIGHT: 30px; BACKGROUND: url(http://style.77zxw.com/images/xl_bj.jpg) no-repeat 0px 0px; BORDER-BOTTOM: #c73d22 3px solid; COLOR: #666; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 15px; BORDER-LEFT: #c73d22 3px solid; WIDTH: 46px
+}
+.search_panel INPUT.search_text {
+	BORDER-TOP: #c73d22 3px solid; BORDER-BOTTOM: #c73d22 3px solid; COLOR: #999; PADDING-TOP: 3px; WIDTH: 300px
+}
+.search_panel INPUT.search_button {
+	OVERFLOW: hidden; HEIGHT: 38px; FLOAT: left; PADDING-LEFT: 0px; WIDTH: 107px
+}
+.search .stdiv {
+	FONT-SIZE: 12px; BORDER-TOP: medium none; BORDER-RIGHT: #c73d22 3px solid; BACKGROUND: #fff; BORDER-BOTTOM: #c73d22 3px solid; POSITION: absolute; LEFT: 0px; BORDER-LEFT: #c73d22 3px solid; TOP: 35px; WIDTH: 60px
+}
+.search .stdiv UL LI {
+	CURSOR: pointer; COLOR: #999; TEXT-ALIGN: center; LINE-HEIGHT: 18px
+}
+.search .stdiv UL LI:hover {
+	BACKGROUND: #e1e1e1
+}

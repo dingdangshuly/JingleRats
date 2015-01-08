@@ -1,0 +1,261 @@
+* {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+BODY {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, "ËÎÌו", sans-serif; BACKGROUND: #ffffff
+}
+IMG {
+	BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+OL {
+	LIST-STYLE-TYPE: none
+}
+DL {
+	LIST-STYLE-TYPE: none
+}
+LI {
+	LIST-STYLE-TYPE: none
+}
+.fb {
+	FONT-WEIGHT: bold
+}
+.fn {
+	FONT-WEIGHT: normal
+}
+.f12 {
+	FONT-SIZE: 12px
+}
+.f14 {
+	FONT-SIZE: 14px
+}
+.tc {
+	TEXT-ALIGN: center
+}
+.tl {
+	TEXT-ALIGN: left
+}
+.tr {
+	TEXT-ALIGN: right
+}
+.ml15 {
+	MARGIN-LEFT: 15px
+}
+.fl {
+	FLOAT: left
+}
+.ufl LI {
+	FLOAT: left
+}
+.dfl DD {
+	FLOAT: left
+}
+.fr {
+	FLOAT: right
+}
+.ufr LI {
+	FLOAT: right
+}
+.dfr DD {
+	FLOAT: right
+}
+.db {
+	DISPLAY: block
+}
+.dn {
+	DISPLAY: none
+}
+.di {
+	DISPLAY: inline
+}
+.cl {
+	FONT-SIZE: 0px; CLEAR: both; DISPLAY: block
+}
+.clear {
+	CLEAR: both
+}
+.h18 {
+	HEIGHT: 15px; PADDING-BOTTOM: 0px; PADDING-TOP: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 0px
+}
+ADDRESS {
+	FONT-STYLE: normal
+}
+EM {
+	FONT-STYLE: normal
+}
+I {
+	FONT-STYLE: normal
+}
+CITE {
+	FONT-STYLE: normal
+}
+Q {
+	FONT-STYLE: normal
+}
+quote {
+	FONT-STYLE: normal
+}
+.ul LI {
+	OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; DISPLAY: block
+}
+.dl DD {
+	OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; DISPLAY: block
+}
+.hid {
+	OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; DISPLAY: block
+}
+TABLE {
+	OVERFLOW: hidden; WORD-BREAK: break-all; BORDER-SPACING: 0
+}
+TH {
+	OVERFLOW: hidden; WORD-BREAK: break-all; BORDER-SPACING: 0
+}
+TD {
+	OVERFLOW: hidden; WORD-BREAK: break-all; BORDER-SPACING: 0
+}
+.table {
+	WHITE-SPACE: nowrap; WORD-BREAK: keep-all
+}
+.table TH {
+	WHITE-SPACE: nowrap; WORD-BREAK: keep-all
+}
+.table TD {
+	WHITE-SPACE: nowrap; WORD-BREAK: keep-all
+}
+.th {
+	WHITE-SPACE: nowrap; WORD-BREAK: keep-all
+}
+.td {
+	WHITE-SPACE: nowrap; WORD-BREAK: keep-all
+}
+.hand {
+	CURSOR: pointer
+}
+.red {
+	COLOR: #f00
+}
+.f60 {
+	COLOR: #f60
+}
+.fff {
+	COLOR: #fff
+}
+.ooo {
+	COLOR: #000
+}
+.ccc {
+	COLOR: #ccc
+}
+.f333 {
+	COLOR: #333
+}
+.ff6000 {
+	COLOR: #ff6000
+}
+.strog {
+	FONT-WEIGHT: bold
+}
+A {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+.hlink {
+	OVERFLOW: hidden; HEIGHT: 100%; DISPLAY: block; TEXT-INDENT: -9999px
+}
+.cler {
+	OVERFLOW: hidden; HEIGHT: 0px; CLEAR: both; WIDTH: 100%
+}
+.limit_w {
+	MARGIN: 0px auto; WIDTH: 970px
+}
+INPUT:focus {
+	OUTLINE-STYLE: none
+}
+* HTML {
+	BACKGROUND-IMAGE: url(about:blank); BACKGROUND-ATTACHMENT: fixed
+}
+* HTML BODY {
+	BACKGROUND-IMAGE: url(about:blank); BACKGROUND-ATTACHMENT: fixed
+}
+#mainnav {
+	OVERFLOW: hidden; CLEAR: both; MARGIN: 0px auto; WIDTH: 970px
+}
+#content {
+	OVERFLOW: hidden; CLEAR: both; MARGIN: 0px auto; WIDTH: 970px
+}
+#footer {
+	OVERFLOW: hidden; CLEAR: both; MARGIN: 0px auto; WIDTH: 970px
+}
+#content {
+	OVERFLOW: visible; PADDING-TOP: 0px
+}
+.w_960 {
+	WIDTH: 960px !important
+}
+#header {
+	BACKGROUND-COLOR: #ffffff
+}
+#header .t {
+	HEIGHT: 110px; POSITION: static
+}
+#header .logo {
+	HEIGHT: 64px; FLOAT: left; MARGIN-TOP: 35px
+}
+#header .city_list {
+	FONT-SIZE: 12px; HEIGHT: 57px; POSITION: relative; FLOAT: left; COLOR: #666666; PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 0px; MARGIN-LEFT: 12px; MARGIN-TOP: 15px; PADDING-RIGHT: 0px; WIDTH: 94px
+}
+#header .city_list P {
+	MARGIN-BOTTOM: 10px; HEIGHT: 22px; DISPLAY: block; WIDTH: 94px; TEXT-INDENT: -999em
+}
+#header .city_list .qh_box {
+	OVERFLOW: hidden; HEIGHT: 15px; BACKGROUND: #ff6600; POSITION: absolute; FONT-WEIGHT: normal; COLOR: #ffffff; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 9px; LEFT: 0px; DISPLAY: inline; PADDING-RIGHT: 9px; BOTTOM: 0px
+}
+#header .city_list .qh_box #current_city {
+	MARGIN-RIGHT: 3px
+}
+.footer {
+	HEIGHT: 159px; PADDING-TOP: 30px; BACKGROUND-COLOR: #f3f3f3
+}
+.footer P {
+	MARGIN-BOTTOM: 18px; FONT-SIZE: 12px; FONT-WEIGHT: normal; COLOR: #666666; TEXT-ALIGN: center; LINE-HEIGHT: 14px
+}
+#header .city_list .qh_box .switch {
+	OVERFLOW: hidden; CURSOR: pointer; HEIGHT: 6px; BACKGROUND: url(../images/about_sjx.png) no-repeat; FONT-WEIGHT: normal; COLOR: #7f7f7f; MARGIN-TOP: -10px; DISPLAY: inline-block; WIDTH: 11px
+}
+.footer P.footer_nav {
+	FONT-SIZE: 14px; HEIGHT: 41px; BACKGROUND: #525252; COLOR: #ffffff; LINE-HEIGHT: 41px
+}
+.footer P.footer_nav A {
+	FONT-WEIGHT: bold; COLOR: #ffffff; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px
+}
+.footer P.footer_nav SPAN {
+	MARGIN: 0px 18px
+}
+.head_top {
+	FLOAT: right; COLOR: #575757; MARGIN-TOP: 8px
+}
+.head_top A {
+	COLOR: #575757
+}
+.head_top SPAN {
+	MARGIN: 0px 6px
+}
+.head_top .top_right .user_img {
+	HEIGHT: 20px; BACKGROUND: url(http://img.to8to.com/front_end/bg/sucai.png?20130415) no-repeat; FLOAT: right; MARGIN-TOP: 0px; DISPLAY: inline-block; WIDTH: 20px; MARGIN-RIGHT: 5px
+}
+.head_top #user_data {
+	POSITION: relative; FLOAT: left; TEXT-ALIGN: right; MARGIN: 0px; Z-INDEX: 1000; WIDTH: 141px
+}
+.head_top .logarea SPAN.line {
+	BACKGROUND: url(../images/line.png) no-repeat 2px -2px; FLOAT: none; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; DISPLAY: inline-block; PADDING-RIGHT: 0px; WIDTH: 6px
+}
+.head_top SPAN.tel {
+	FONT-WEIGHT: bolder; COLOR: #ff6600; MARGIN: 0px
+}
+.head_top .zxb {
+	TEXT-ALIGN: right; MARGIN-TOP: 20px
+}
