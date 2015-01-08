@@ -32,7 +32,6 @@ app.use(bodyParser.urlencoded({
 
 
 app.get('/index', function(req, res) {
-	console.info('..............');
 	res.render('index', {});
 	// res.render('form', {msg:{userid:'tom'}});
 });

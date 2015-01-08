@@ -1,15 +1,17 @@
 {
-  "name": "Renovation",
+  "name": "JingleRats",
   "version": "0.0.1",
   "description": "",
   "author": "dingdangshu",
   "dependencies": {
+    "express": "*",
     "body-parser": "*",
     "cookie-parser": "*",
-    "express": "*",
+    "express-session": "*",
     "method-override": "*",
+    "ejs":"*",
     "mongodb": "*",
     "mongoose": "*",
-    "dataformat": "*"
+    "dateformat": "*"
   }
 }
