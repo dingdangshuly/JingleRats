@@ -157,7 +157,7 @@
              var i = 0; 
              materials.forEach(function(material){ %> 
              <tr> 
-              <td width="1" height="40" align="center"><input type="hidden" name="rows[<%=i%>][mid]" value=<%=material.mid%></td>
+                 <td width="1" height="40" align="center"><input type="hidden" name="rows[<%=i%>][mid]" value=<%=material.mid%> /></td>
                 <td width="150" height="40" align="center"><input type="text"  name="rows[<%=i%>][name] style="border:0px; width:80px; text-align:center"  readonly="true" value=<%=material.name%> /></td> 
                 <td width="150" align="center"> <input type="text" name="rows[<%=i%>][quantity]"  id="textfield20" style="width:40px;" size="13" maxlength="3" value=<%=material.quantity%> /> 张 </td> 
                 <td width="150" align="center"><input type="text" name="rows[<%=i%>][price]"  style="border:0px; width:40px;" align="middle"value=<%=material.unitprice%> /></td> 

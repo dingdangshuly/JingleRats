@@ -8,13 +8,13 @@ var Order = require('../proxy').Order,
 
 //生成订单
 exports.generateOrder = function(req, res) {
-	var phone = req.body.phone || '',//手机号码
-		builtpArea = req.body.builtpArea || 0,//建筑面积
-		address = req.body.address || '',//收货地址
+	var phone = req.body.phone || '', //手机号码
+		builtpArea = req.body.builtpArea || 0, //建筑面积
+		address = req.body.address || '', //收货地址
 		rows = req.body.rows || [];
-	var orderid = 0,//订单号码
-		materials = [],//材料集合
-		totalprice = 0;//总价：(各类材料数量*单价)之和
+	var orderid = 0, //订单号码
+		materials = [], //材料集合
+		totalprice = 0; //总价：(各类材料数量*单价)之和
 
 	if (phone.length < 11) {
 		res.json({
@@ -65,7 +65,8 @@ exports.generateOrder = function(req, res) {
 	ep.all('tpl', 'tp2', function(tpl, tp2) {
 		if (tpl.length > 11 && materials.length > 0) {
 			//订单入库
-			Order.saveOrder(tpl, builtpArea, address, phone, materials, totalprice, function(err,order) {
+			Order.saveOrder(tpl, builtpArea, address, phone, materials, totalprice, function(err, order) {
+				orderSequence.incrOrderSequence(orderid, function(err, oid) {});
 				console.info('******订单入库成功****');
 				console.info(order);
 				res.redirect('/orderPage?orderid=' + crypto.encodeBase64(tpl));
@@ -85,7 +86,7 @@ exports.queryOrderById = function(req, res) {
 			res.writeHead(200, {
 				'Content-Type': 'text/plain; charset=utf-8'
 			});
-			res.end('订单号: ' + order.oid + '\n地址：' + order.address + '\n手机号码：' + order.phone + '\n建筑面积：' + order.builtpArea + '\n总价：' + order.totalprice+'￥');
+			res.end('订单号: ' + order.oid + '\n地址：' + order.address + '\n手机号码：' + order.phone + '\n建筑面积：' + order.builtpArea + '\n总价：' + order.totalprice + '￥');
 		});
 	} else {
 		res.json({

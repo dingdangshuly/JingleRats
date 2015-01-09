@@ -62,12 +62,12 @@ var incrOrderSequence = exports.incrOrderSequence = function(oid, cb) {
 			$inc: {
 				oid: 1
 			}
-		}, function(err) {
+		}, function(err,oid) {
 			mongodb.close();
 			if (err) {
 				return cb(err);
 			}
-			cb('success');
+			cb(err,oid);
 		});
 	});
 };
