@@ -34,7 +34,7 @@ var sign = require('./controller/sign_ctrl');
 var materials = require('./controller/materials_ctrl');
 var order = require('./controller/order_ctrl');
 
-app.get('/*',);
+// app.get('/*',);
 app.get('/index', materials.getDefaultMaterials);
 app.post('/order', order.generateOrder);
 app.get('/orderPage', order.queryOrderById);
@@ -42,6 +42,6 @@ app.get('/orderPage', order.queryOrderById);
 //注册
 app.post('/signup', sign.signup);
 app.post('/login', sign.login);
-app.post('/logout', );
+// app.post('/logout', );
 
 app.listen(3000);

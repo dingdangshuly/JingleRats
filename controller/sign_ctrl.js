@@ -5,7 +5,6 @@ var cookieUtil = require('../utils/cookieUtil');
 exports.signup = function(req, res) {
 	var userid = req.body.userid.trim();
 	var password = req.body.password.trim();
-
 	if (userid == '' || password == '') {
 		res.json({
 			msg: '用户名或者密码为空',
@@ -14,17 +13,13 @@ exports.signup = function(req, res) {
 		return;
 	}
 	User.findUser({
-		'$or': [{
-			'userid': userid
-		}, {
-			'password': password
-		}]
+		userid: userid,
+		password: password
 	}, function(err, user) {
-		console.info('select from users ：', user);
 		if (err) {
 			return next(err);
 		}
-		if (user.length > 0) {
+		if (user) {
 			res.json({
 				msg: '用户名已被使用。',
 				status: 'false'
@@ -36,7 +31,7 @@ exports.signup = function(req, res) {
 			if (err) {
 				return next(err);
 			}
-			console.info(userid + ' 插入成功');
+			console.info(userid + ' 注册成功');
 			res.json({
 				msg: userid,
 				status: 'success'
@@ -47,13 +42,21 @@ exports.signup = function(req, res) {
 
 //登陆
 exports.login = function(req, res) {
-	console.info('===>', req.session.user);
-	if (req.body.remember || req.session.user) {
+	console.info('session：', req.session.user);
+	if (req.session.user) {
 		cookieUtil.readCookieAndLogin(req, function(user) {
-			res.json({
-				msg: user.userid,
-				status: 'success'
-			});
+			if (user) {
+				res.json({
+					msg: user.userid,
+					status: 'success'
+				});
+			} else {
+				res.json({
+					msg: '',
+					status: 'false'
+				});
+			}
+
 		});
 	} else {
 		var userid = req.body.userid.trim();
@@ -76,7 +79,7 @@ exports.login = function(req, res) {
 			}
 			if (!user) {
 				res.json({
-					msg: '用户名密码不正确。',
+					msg: '用户名或者密码不正确。',
 					status: 'false'
 				});
 				return;
@@ -92,8 +95,10 @@ exports.login = function(req, res) {
 
 }
 
-exports.readCookieAndLogin = function(req, res) {
+exports.readCookieAndLogin = function(req, res, next) {
+	if (req.session.user) {
 
+	}
 }
 
 //登出

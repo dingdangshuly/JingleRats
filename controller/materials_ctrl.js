@@ -5,6 +5,7 @@ var async = require('async');
 //拉取推荐材料列表
 exports.getDefaultMaterials = function(req, res) {
 	var materialsData = {
+		msg: {},
 		materials: []
 	};
 	var builtpArea = parseInt(req.body.builtpArea || 100); //默认100平米
@@ -18,7 +19,9 @@ exports.getDefaultMaterials = function(req, res) {
 			cb();
 		});
 	}, function(err, result) {
-		console.info('******拉取推荐材料列表*****\n',materialsData);
+		// materialsData.msg[msg] = userid;
+		// materialsData.msg[status] = 'success';
+		console.info('******拉取推荐材料列表*****\n', materialsData);
 		res.render('index', materialsData);
 	});
 };
