@@ -21,11 +21,11 @@ exports.saveCookie = function(user, req, res) {
 	var cookieValue = user.userid + ':' + validTime + ':' + cookieValueWithMd5;
 	//再一次对cookie进行base64编码
 	var cookieValueWithBase64 = new Buffer(cookieValue).toString('base64');
-	req.session[user] = user;
+	req.session['user'] = user;
 	res.cookie(cookieDomainName, cookieValueWithBase64);
 }
 
-exports.readCookieAndLogin = function(req,cb) {
+exports.readCookieAndLogin = function(req, cb) {
 	if (req.cookies[cookieDomainName]) {
 		var cookieValue = new Buffer(req.cookies[cookieDomainName], 'base64').toString();
 		var values = cookieValue.split(':');
@@ -45,9 +45,9 @@ exports.readCookieAndLogin = function(req,cb) {
 			}
 			if (user) {
 				console.info(user.userid + ':' + user.password + ':' + validTime + ':' + webkey);
-				var userInfoWithMd5 =crypto.createHash('md5').update(user.userid + ':' + user.password + ':' + validTime + ':' + webkey).digest('hex');
+				var userInfoWithMd5 = crypto.createHash('md5').update(user.userid + ':' + user.password + ':' + validTime + ':' + webkey).digest('hex');
 				if (userInfoWithMd5 == userInfoWithMd5) {
-					req.session[user] = user;
+					req.session['user'] = user;
 				}
 				cb(user);
 			} else {

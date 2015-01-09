@@ -42,8 +42,7 @@ exports.signup = function(req, res) {
 
 //登陆
 exports.login = function(req, res) {
-	console.info('session：', req.session.user);
-	if (req.session.user) {
+	if (req.session.user && req.session.user.userid &&  req.session.user.password == req.body.password) {
 		cookieUtil.readCookieAndLogin(req, function(user) {
 			if (user) {
 				res.json({
@@ -52,7 +51,7 @@ exports.login = function(req, res) {
 				});
 			} else {
 				res.json({
-					msg: '',
+					msg: '请登陆',
 					status: 'false'
 				});
 			}
@@ -79,7 +78,7 @@ exports.login = function(req, res) {
 			}
 			if (!user) {
 				res.json({
-					msg: '用户名或者密码不正确。',
+					msg: '用户名或密码不正确',
 					status: 'false'
 				});
 				return;
@@ -102,9 +101,12 @@ exports.readCookieAndLogin = function(req, res, next) {
 }
 
 //登出
-exports.loginOut = function(req, res) {
+exports.logout = function(req, res) {
 	cookieUtil.clearCookie(req, res);
-	res.render('index', {
-		msg: '用户已退出'
+	// res.render('index', {
+	// 	msg: '用户已退出'
+	// });
+	res.json({
+		msg: '登出'
 	});
 }

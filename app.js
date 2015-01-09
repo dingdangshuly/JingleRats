@@ -16,6 +16,11 @@ app.use(session({
 	secret: 'somesecrettokenhere'
 }));
 
+app.use(function(req, res, next) {
+	res.locals.session = req.session;
+	next();
+});
+
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({
 	extended: true
@@ -42,6 +47,6 @@ app.get('/orderPage', order.queryOrderById);
 //注册
 app.post('/signup', sign.signup);
 app.post('/login', sign.login);
-// app.post('/logout', );
+app.get('/logout', sign.logout);
 
 app.listen(3000);

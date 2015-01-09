@@ -32,3 +32,17 @@ $(function() {
       });
   });
 });
+
+$(function() {
+  $("#logout").click(function() {
+    $.get("/logout", {},
+      function(data, status) {
+        if (data.status == 'success') {
+          $("#username").html("" + data.msg);
+        } else {
+          $("#username").html(data.msg);
+          // $("#login_reg").hide();
+        }
+      });
+  });
+});

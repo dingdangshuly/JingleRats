@@ -46,12 +46,16 @@
 </style> 
  </head> 
  <body> 
-
+<!-- <%=JSON.stringify(session)%>-->
  <table width="1200" border="0" align="center" cellpadding="1" cellspacing="0" id="login_reg">
   <tr>
     <td width="649" bgcolor="#CCCCCC" class="ww">所在城市 &nbsp;临沂</td>
     <td width="134" bgcolor="#CCCCCC" class="ww">客服电话7858888</td>
-    <td width="104" bgcolor="#CCCCCC" class="ww" id="username">未登录用户</td> 
+    <%if(session.user){%>
+       <td width="104" bgcolor="#CCCCCC" class="ww" id="username">欢迎您,<%=session.user.userid %></td>
+    <%}else{%>
+       <td width="104" bgcolor="#CCCCCC" class="ww" id="username">未登录用户</td> 
+    <%}%>
     <td width="105" bgcolor="#CCCCCC" class="ww">我的购物车</td>
   </tr>
 </table>
@@ -68,7 +72,9 @@
       <input name="textfield23" type="text" id="textfield23" size="15" />
     </form>      <span class="txt lgn_txt"><span class="new_lj_lgn">    </span></span></td>
     <td width="145"><form id="form3" name="form3" method="post" action="">
-      <input type="button" name="login" id="login" value="登录" /> 
+      <input type="button" name="login" id="login" value="登录" />
+
+      <!--<input type="button" name="login" id="logout" value="登出" /> -->
     </form></td>
   </tr>
   <tr>
