@@ -15,6 +15,7 @@ $(function() {
   });
 });
 
+
 $(function() {
   $("#login").click(function() {
     $.post("/login", {
@@ -33,6 +34,8 @@ $(function() {
   });
 });
 
+
+<!--
 $(function() {
   $("#logout").click(function() {
     $.get("/logout", {},
@@ -46,3 +49,5 @@ $(function() {
       });
   });
 });
+
+-->

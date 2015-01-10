@@ -62,5 +62,6 @@ exports.readCookieAndLogin = function(req, cb) {
 
 //用户注销时，清除cookie
 exports.clearCookie = function(req, res) {
+	req.session['user'] = null;
 	res.clearCookie(cookieDomainName);
 }

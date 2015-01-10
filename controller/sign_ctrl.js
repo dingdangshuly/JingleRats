@@ -103,10 +103,6 @@ exports.readCookieAndLogin = function(req, res, next) {
 //登出
 exports.logout = function(req, res) {
 	cookieUtil.clearCookie(req, res);
-	// res.render('index', {
-	// 	msg: '用户已退出'
-	// });
-	res.json({
-		msg: '登出'
-	});
+	console.info('-----------------------');
+	res.redirect('/index');
 }
