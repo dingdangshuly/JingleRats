@@ -7,9 +7,14 @@ $(function() {
       function(data, status) {
         if (data.status == 'success') {
           $("#username").html("欢迎您," + data.msg);
+          $("#td1").hide();
+          $("#td2").hide();
+          $("#td3").hide();
+          $("#td4").hide();
+          $("#td5").hide();
+          $("#td6").hide();
         } else {
           $("#username").html(data.msg);
-          // $("#login_reg").hide();
         }
       });
   });
@@ -26,9 +31,17 @@ $(function() {
       function(data, status) {
         if (data.status == 'success') {
           $("#username").html("欢迎您," + data.msg);
+          $("#td1").hide();
+          $("#td2").hide();
+          $("#td3").hide();
+          $("#td4").hide();
+          $("#td5").hide();
+          $("#td6").hide();
+          $("#td7").show();
         } else {
           $("#username").html(data.msg);
           // $("#login_reg").hide();
+
         }
       });
   });

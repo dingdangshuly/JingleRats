@@ -26,11 +26,14 @@ exports.signup = function(req, res) {
 			});
 			return;
 		}
+
 		//保存用户
-		User.saveUser(userid, password, function(err) {
+		User.saveUser(userid, password, function(err,user) {
 			if (err) {
 				return next(err);
 			}
+			//用户信息写cookie
+			cookieUtil.saveCookie(user, req, res);
 			console.info(userid + ' 注册成功');
 			res.json({
 				msg: userid,
@@ -42,7 +45,7 @@ exports.signup = function(req, res) {
 
 //登陆
 exports.login = function(req, res) {
-	if (req.session.user && req.session.user.userid &&  req.session.user.password == req.body.password) {
+	if (req.session.user && req.session.user.userid && req.session.user.password == req.body.password) {
 		cookieUtil.readCookieAndLogin(req, function(user) {
 			if (user) {
 				res.json({
@@ -102,7 +105,7 @@ exports.readCookieAndLogin = function(req, res, next) {
 
 //登出
 exports.logout = function(req, res) {
-	cookieUtil.clearCookie(req, res);
-	console.info('-----------------------');
+	// cookieUtil.clearCookie(req, res);
+	req.session['user'] = null;
 	res.redirect('/index');
 }

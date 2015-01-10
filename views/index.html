@@ -46,7 +46,7 @@
 </style> 
  </head> 
  <body> 
-<!-- <%=JSON.stringify(session)%>-->
+<!-- <%=JSON.stringify(session)%> -->
  <table width="1200" border="0" align="center" cellpadding="1" cellspacing="0" id="login_reg">
   <tr>
     <td width="649" bgcolor="#CCCCCC" class="ww">所在城市 &nbsp;临沂</td>
@@ -67,18 +67,23 @@
     <td width="1" valign="middle" bgcolor="#FFFFFF">&nbsp;</td>
     <td width="108">&nbsp;</td>
     <td width="59">&nbsp;</td>
-    <td width="173" height="37"><form id="form1" name="form1" method="post" action="">
-      <label for="textfield23">账号</label>
-      <input name="textfield23" type="text" id="textfield23" size="15" />
-    </form>      <span class="txt lgn_txt"><span class="new_lj_lgn">    </span></span></td>
-    <td width="145">
-      <form id="form3" name="form3" method="post" action="">
-        <input type="button" name="login" id="login" value="登录" />
-      </form>
-      <form action = "/logout">
-        <input type="submit" name="logout" id="logout" value="登出" />
-      </form>
+    <td id="td1" width="173" height="37">
+        <form id="form1" name="form1" method="post" action="">
+          <label for="textfield23">账号</label>
+          <input name="textfield23" type="text" id="textfield23" size="15" />
+        </form>
+    <span class="txt lgn_txt"><span class="new_lj_lgn"></span></span>
     </td>
+    <td id="td2" width="145">
+        <form id="form3" name="form3" method="post" action="">
+          <input type="button" name="login" id="login" value="登录" />
+        </form>
+    </td>
+        <td id="td7">
+          <form action = "/logout">
+              <input type="submit" name="logout" id="logout" value="登出" />
+            </form>
+        </td>
   </tr>
   <tr>
     <td valign="middle" bgcolor="#FF6600"><div class="search_panel clearfloat">
@@ -89,24 +94,28 @@
     <td valign="middle" bgcolor="#FFFFFF">&nbsp;</td>
     <td width="108" bgcolor="#FF6600"><a href="#"><img src="image/search01.jpg" width="107" height="39" /></a></td>
     <td width="59">&nbsp;</td>
-    <td height="40"><form id="form2" name="form2" method="post" action="">
-      <label for="textfield25">密码</label>
-      <input name="textfield25" type="password" id="textfield25" size="15" />
-    </form></td>
-    <td height="40"><form id="form4" name="form4" method="post" action="">
-       <input type="button" name="button2" id="button2" value="注册" /> 
-    </form></td>
+    <td id="td3" height="40">
+        <form id="form2" name="form2" method="post" action="">
+          <label for="textfield25">密码</label>
+          <input name="textfield25" type="password" id="textfield25" size="15" />
+        </form>
+    </td>
+    <td id="td4" height="40">
+        <form id="form4" name="form4" method="post" action="">
+           <input type="button" name="button2" id="button2" value="注册" /> 
+        </form>
+    </td>
   </tr>
   <tr>
     <td valign="middle">&nbsp;</td>
     <td valign="middle" bgcolor="#FFFFFF">&nbsp;</td>
     <td width="108">&nbsp;</td>
     <td width="59">&nbsp;</td>
-    <td height="28"><form id="form5" name="form5" method="post" action="">
+    <td id="td5" height="28"><form id="form5" name="form5" method="post" action="">
       <input type="checkbox" name="checkbox" id="remember" />
       <span class="ee">记住密码 </span>
     </form></td>
-    <td height="28"><a href="#" class="ee">忘记密码</a></td>
+    <td id="td6" height="28"><a href="#" class="ee">忘记密码</a></td>
   </tr>
 </table>
   <br /> 
@@ -247,4 +256,19 @@
 var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1");
 </script>   
  </body>
+ <%if(session.user){%>
+   <script type="text/javascript">
+      $("#td1").hide();
+      $("#td2").hide();
+      $("#td3").hide();
+      $("#td4").hide();
+      $("#td5").hide();
+      $("#td6").hide();
+      $("#td7").show();
+   </script>
+<%}else{%>
+  <script type="text/javascript">
+    $("#td7").hide();
+  </script>
+<%}%>
 </html>
