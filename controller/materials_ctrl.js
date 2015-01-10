@@ -21,7 +21,7 @@ exports.getDefaultMaterials = function(req, res) {
 	}, function(err, result) {
 		// materialsData.msg[msg] = userid;
 		// materialsData.msg[status] = 'success';
-		console.info('******拉取推荐材料列表*****\n', materialsData);
+		// console.info('******拉取推荐材料列表*****\n', materialsData);
 		res.render('index', materialsData);
 	});
 };

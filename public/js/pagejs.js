@@ -26,7 +26,7 @@ $(function() {
     $.post("/login", {
         userid: document.getElementById('textfield23').value,
         password: document.getElementById('textfield25').value,
-        remember: document.getElementById('remember').value
+        remember: document.getElementById('remember').checked
       },
       function(data, status) {
         if (data.status == 'success') {

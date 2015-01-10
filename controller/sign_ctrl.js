@@ -28,7 +28,7 @@ exports.signup = function(req, res) {
 		}
 
 		//保存用户
-		User.saveUser(userid, password, function(err,user) {
+		User.saveUser(userid, password, function(err, user) {
 			if (err) {
 				return next(err);
 			}
@@ -58,7 +58,6 @@ exports.login = function(req, res) {
 					status: 'false'
 				});
 			}
-
 		});
 	} else {
 		var userid = req.body.userid.trim();
@@ -105,7 +104,8 @@ exports.readCookieAndLogin = function(req, res, next) {
 
 //登出
 exports.logout = function(req, res) {
-	// cookieUtil.clearCookie(req, res);
+	console.info(req.session.user + ' 已退出');
+	cookieUtil.clearCookie(req, res);
 	req.session['user'] = null;
 	res.redirect('/index');
 }
