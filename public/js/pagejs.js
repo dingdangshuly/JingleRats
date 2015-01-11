@@ -13,6 +13,7 @@ $(function() {
           $("#td4").hide();
           $("#td5").hide();
           $("#td6").hide();
+          $("#td7").show();
         } else {
           $("#username").html(data.msg);
         }
